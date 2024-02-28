@@ -1,4 +1,4 @@
-# iaw-practica-lamp
+# crud-php
 
 >IES Miguel Herrero (Torrelavega) - Curso 2023/2024  
 >Módulo: IAW - Implantación de Aplicaciones Web  
