@@ -99,7 +99,8 @@ mysqli_close($mysqli);
 		<li><a href="add.html" >Alta</a></li>
 	</ul>
 	<h2>Modificación trabajador/a</h2>
-
+<!--Formulario de edición. 
+Al hacer click en el botón Guardar, llama a esta misma página: edit.php-->
 	<form action="edit.php" method="post">
 		<div>
 			<label for="name">Nombre</label>

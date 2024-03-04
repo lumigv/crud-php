@@ -36,7 +36,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 		echo "<td>".$res['name']."</td>\n";
 		echo "<td>".$res['surname']."</td>\n";
 		echo "<td>".$res['age']."</td>\n";
-		echo "<td><a href=\"edit.php?id=$res[id]\">Editar</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Eliminar</a></td>\n";
+		echo "<td><a href=\"edit.php?id=$res[id]\">Editar</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('¿Está segur@ que desea eliminar el registro?')\">Eliminar</a></td>\n";
 		echo "</tr>\n";
 	}
 

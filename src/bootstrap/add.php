@@ -51,8 +51,8 @@ if(isset($_POST['Submit'])) {
 		mysqli_stmt_close($stmt);
 
 		// display success message
-		echo "<div class='alert alert-success' role='alert'>Data added successfully</div>";
-		echo "<a href='index.php' class='btn btn-primary'>View Result</a>";
+		echo "<div class='alert alert-success' role='alert'>Datos añadidos correctamente</div>";
+		echo "<a href='index.php' class='btn btn-primary'>Ver resultado</a>";
 	}
 }
 
