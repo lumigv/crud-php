@@ -1,6 +1,13 @@
 <?php
+/*Incluye parámetros de conexión a la base de datos: 
+DB_HOST: Nombre o dirección del gestor de BD MariaDB
+DB_NAME: Nombre de la BD
+DB_USER: Usuario de la BD
+DB_PASSWORD: Contraseña del usuario e la BD
+*/
 include_once("config.php");
 
+//Consulta de selección. Selecciona todos los usuarios ordenados de manera descendente por el campo id
 $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 
 ?>
@@ -35,7 +42,19 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 	</thead>
 	<tbdody>
 <?php
-//mysqli_fetch_array- Obtiene una fila de resultados como un array asociativo, numérico o ambos
+/*mysqli_fetch_array- Busca una fila de una consulta y devuelve un array asociativo
+ARRAYS CON ÍNDICE
+$productos = array();
+$productos[0] = "Disco SSD";
+$productos[1] = "Memoria RAM";
+$productos[2] = "Monitor";
+ARRAYS ASOCIATIVO:
+$res["id"] = "7";
+$res["name"] = "Pedro";
+$res["surname"] = "Zapata";
+$res["age"] = "23";
+*/
+//Genera la tabla de la página inicial
 	while($res = mysqli_fetch_array($result)) {
 		echo "<tr>\n";
 		echo "<td>".$res['name']."</td>\n";
