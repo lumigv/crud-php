@@ -5,6 +5,7 @@ DB_NAME: Nombre de la BD
 DB_USER: Usuario de la BD
 DB_PASSWORD: Contraseña del usuario e la BD
 */
+
 include_once("config.php");
 
 //Consulta de selección. Selecciona todos los usuarios ordenados de manera descendente por el campo id

@@ -20,6 +20,7 @@ define('DB_USER', 'username_here');
 define('DB_PASSWORD', 'password_here');
 */
 
+
 //Abre una nueva conexión al servidor MySQL/MariaDB
 $mysqli = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 //Devuelve una descripción del último error producido en la conexión a la BD
