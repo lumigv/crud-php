@@ -4,7 +4,7 @@
 >Módulo: IAW - Implantación de Aplicaciones Web  
 >Ciclo: CFGS Administración de Sistemas Informáticos en Red  
 
-Esta práctica consiste en un sistema **muy básico** para añadir, editar, borrar y ver registros de una base de datos, haciendo uso de [PHP][1] y [MariaDB][2].
+Esta aplicación consiste en un sistema **muy básico** para añadir, editar, borrar y ver registros de una base de datos, haciendo uso de [PHP][1] y [MariaDB][2].
 
 ## Créditos
 
