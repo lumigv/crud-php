@@ -3,7 +3,7 @@
 include("config.php");
 
 /*Obtiene el id del datos a eliminar a partir de la URL. Transacción de datos utilizando el método: GET
-Recuerda que existen dos métodos con los que el navegador puede enviar información al servidor:
+Recuerda que   existen dos métodos con los que el navegador puede enviar información al servidor:
 1.- Método HTTP GET. Información se envía de forma visible. A través de la URL (header HTTP Request )
 En PHP los datos se administran con el array asociativo $_GET.
 2.- Método HTTP POST. Información se envía de forma no visible. A través del cuerpo del HTTP Request 
