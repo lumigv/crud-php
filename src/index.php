@@ -65,11 +65,19 @@ $res["surname"] = "Zapata";
 $res["age"] = "23";
 */
 //Genera la tabla de la página inicial
+	//while($res = mysqli_fetch_row($result)) {
 	while($res = mysqli_fetch_array($result)) {
+		//se puede hacer con consultas preparadas
 		echo "<tr>\n";
 		echo "<td>".$res['name']."</td>\n";
 		echo "<td>".$res['surname']."</td>\n";
 		echo "<td>".$res['age']."</td>\n";
+		/*echo "<td>".$res[2]."</td>\n";
+		echo "<td>".$res[1]."</td>\n";
+		echo "<td>".$res[3]."</td>\n";*/
+		/*echo "<td>".$res[2]."</td>\n";
+		echo "<td>".$res[1]."</td>\n";
+		echo "<td>".$res[3]."</td>\n";*/
 		echo "<td>";
 //En la última columna se añader dos enlaces para editar y modificar el registro correspondiente. Se le pasa por el método GET el id del registro		
 		echo "<a href=\"edit.php?id=$res[id]\">Editar</a>\n";
@@ -84,8 +92,30 @@ $res["age"] = "23";
 	</table>
 	</main>
 	<footer>
-    Created by the IES Miguel Herrero team &copy; 2024
+    <!--Oposiciones INFORMÁTICA &copy; 2024-->
   	</footer>
 </div>
 </body>
 </html>
+
+
+<?php
+/*
+//Consultas preparadas
+$link = mysqli_connect("localhost", "my_user", "my_password", "world");
+
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
+$query = "SELECT Name, CountryCode FROM City ORDER by ID DESC LIMIT 150,5";
+if ($stmt = mysqli_prepare($link, $query)) {
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $name, $code);
+    while (mysqli_stmt_fetch($stmt)) {
+        printf ("%s (%s)\n", $name, $code);
+    }
+    mysqli_stmt_close($stmt);
+}
+mysqli_close($link);
+*/?>

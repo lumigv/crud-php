@@ -31,7 +31,8 @@ Transacción de datos utilizando el método: POST
 if(isset($_POST['inserta'])) 
 {
 //Obtiene los datos (name, surname y age) a partir del formulario de alta por el método POST (Se envía a través del body del HTTP Request. No aparece en la URL)
-	$name = mysqli_real_escape_string($mysqli, $_POST['name']);
+	//$name = mysqli_real_escape_string($mysqli, $_POST['name']);
+	$name = mysqli_real_escape_string($mysqli, $_REQUEST['name']);
 	$surname = mysqli_real_escape_string($mysqli, $_POST['surname']);
 	$age = mysqli_real_escape_string($mysqli, $_POST['age']);
 /*Con mysqli_real_scape_string protege caracteres especiales en una cadena para ser usada en una sentencia SQL.
