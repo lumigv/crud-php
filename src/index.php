@@ -32,7 +32,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 -->
 <div>
 	<header>
-		<h1>Panel de Control</h1>
+		<!--<h1>Panel de Control</h1>-->
 	</header>
 
 	<main>
@@ -40,7 +40,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="add.html">Alta</a></li>
 	</ul>
-	<h2>Listado de trabajador@s</h2>
+	<!--<h2>Listado de trabajador@s</h2>-->
 	<table border="1">
 	<thead>
 		<tr>
